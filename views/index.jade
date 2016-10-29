@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p  #{title} nodejs服务api接口说明
+  li  通过id查询:
+  a(href="http://localhost:3000/goodDel?id=115") http://localhost:3000/goodDel?id=115
+
+  li 添加商品：
+  a(href="http://localhost:3000/goodAdd?name=567&desc=全世界最好吃的苹果&price=12.00&sum=23") http://localhost:3000/goodAdd?name=567&desc=全世界最好吃的苹果&price=12.00&sum=23
+
+  li 通过id修改商品：
+  a(href="http://localhost:3000/goodUpdate?name=苹果&desc=【北京特产】送礼必备，赶紧抢购吧！&price=45.00&sum=12&id=1") http://localhost:3000/goodUpdate?name=苹果&desc=【北京特产】送礼必备，赶紧抢购吧！&price=45.00&sum=12&id=1
+
+  li 查询所有商品：
+  a(href="http://localhost:3000/goodAll	") http://localhost:3000/goodAll		
+
+  li 查询单个商品：
+  a(href="http://localhost:3000/goodById?id=112") http://localhost:3000/goodById?id=112
