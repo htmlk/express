@@ -171,4 +171,8 @@ name=123&desc=123&price=123&sum=234
 	    res.header("Content-Type", "application/json;charset=utf-8");
 	    next();
 	});
-````	
+```	
+
+2、拼凑sql语句
+
+	var id = +req.query.id; // 为了拼凑正确的sql语句，这里要转下整数
